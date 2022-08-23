@@ -60,9 +60,9 @@ jobs:
 
     # make html gds viewer with GDS2WebGL
     - name: GDS2WebGL
-      run: 
-        - cd GDS2WebGL
-        - python3 gds2webgl.py -i ../runs/wokwi/results/final/gds/*gds -o ../gds.html
+      run: |
+        cd GDS2WebGL
+        python3 gds2webgl.py -i ../runs/wokwi/results/final/gds/*gds -o ../gds.html
 
     # archive the gds and some other important files
     - name: Archive files
